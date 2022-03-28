@@ -1,0 +1,187 @@
+/* 2022.03.27 */
+
+/* Глобальні властивості (змінні) */
+:root {
+  /* Базовий колір (Обрав по коліру тексту тегів <p> , чких ммає бути найбільше) */
+  --color-base: #757575;
+  /* Колір заголовків */
+  --color-title: #212121;
+  /* Колір головного акценту */
+  --color-accent-main: #2196f3;
+  /* Колір акценту білий*/
+  --color-accent-white: #ffffff;
+  /* Колір додаткового акценту */
+  --color-additional: rgba(255, 255, 255, 0.6);
+
+  /* !!Назви кольорів фону мені не подобаються, але інших придумати не зміг  */
+
+  /* Колір фону світлий */
+  --color-background-light: #e5e5e5;
+  /* Колір фону затемнений */
+  --color-background-darkened: #f5f4fa;
+  /* Колір фону темний */
+  --color-background-dark: #2f303a;
+}
+
+/* *Загальні стилі */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-base);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.collection li {
+  list-style: none;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-title);
+}
+address {
+  font-style: normal;
+}
+button {
+  letter-spacing: inherit;
+}
+/* *Логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+}
+.page-header .logo-accent {
+  color: var(--color-title);
+}
+.page-footer .logo-accent {
+  color: var(--color-accent-white);
+}
+
+/* *Шапка сайту */
+.page-header {
+  background-color: var(--color-accent-white);
+}
+.link-header {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-weight: 500;
+}
+.site-nav .link {
+  color: var(--color-title);
+}
+/* .contacts .link {
+  color: var(--color-base);
+} */
+
+.site-nav .link.current,
+.site-nav .link:hover,
+.contacts .link:hover {
+  color: var(--color-accent-main);
+}
+
+/* *Герой */
+.hero {
+  background-color: var(--color-background-dark);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36; /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent-white);
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--color-accent-white);
+  background: var(--color-accent-main);
+}
+
+/* *Секції */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* *Секція Переваги */
+.section-benefits .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* *Секція Наша Команда */
+.section-team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* *Футер */
+.page-footer {
+  background-color: var(--color-background-dark);
+}
+.link.map {
+  color: var(--color-accent-white);
+}
+.additional {
+  color: var(--color-additional);
+}
+
+/* **Сторінка Портфоліо */
+
+.radio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--color-title);
+  background-color: var(--color-background-darkened);
+}
+.radio-button.link.current {
+  color: var(--color-accent-white);
+  background-color: var(--color-accent-main);
+}
+.radio-button:focus,
+.radio-button:hover {
+  color: var(--color-accent-white);
+  background-color: var(--color-accent-main);
+  cursor: pointer;
+}
+.section-portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+}
+.section-portfolio .group {
+  font-size: 16px;
+  line-height: 1.88;
+}

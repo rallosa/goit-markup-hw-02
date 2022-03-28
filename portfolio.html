@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання goit-markup-hw-01 Ралло Сергій</title>
+
+    <!-- !! Питання до ментору ?? Якісь незрозумілі посилання від google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+    <!-- Підключаю кастомні шрифти Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta lang='en' name="author" content="Rallo Sergey">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Навігація (головна навігація в середені сайту)-->
+        <nav>
+            <!-- Логотип. Посилання на головну сторінку -->
+            <a class="logo link" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+
+            <ul class="site-nav collection">
+                <li><a class="link link-header" href="./studio.html">Студія</a></li>
+                <li><a class="link link-header" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="link link-header" href="./contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="contacts collection">
+            <li><a class="link link-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link link-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="section section-portfolio">
+            <h1 class="section-title hidden">Портфолио</h1>
+            <ul class="collection filters">
+                <li><button class="radio-button">Всі</button></li>
+                <li><button class="radio-button">Веб сайти</button></li>
+                <li><button class="radio-button">Програми</button></li>
+                <li><button class="radio-button">Дизайн</button></li>
+                <li><button class="radio-button">Маркетинг</button></li>
+            </ul>
+            <ul class="collection">
+                <li>
+                    <img src="./images/portfolio/technocrack.jpg" 
+                        alt="Сайт Технокряк на екрані ноутбука">
+                    <h3 class="title">Технокряк</h3>
+                    <p class="group">Веб-сайт</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/new-orlean-vs-golden-star.jpg" 
+                        alt="Постер: Баскетболіст у білій формі команди Golden Star блокує кидок баскетболіста у синій формі команди New Orlean">
+                    <h3 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="group">Дизайн</p>
+                </li> 
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/seafood.jpg" 
+                        alt="Емблема Ресторану Seafood">
+                    <h3 class="title">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="group">Додаток</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/prime.jpg" 
+                        alt="Великі навушники. З картинки видалено зайвий фон.">
+                    <h3 class="title">Проект <span lang="en">Prime</span></h3>
+                    <p class="group">Маркетинг</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/boxes.jpg" 
+                        alt="Дві коробки: більша білого колльору, і менша коричневого кольору.">
+                    <h3 class="title">Проект <span lang="en">Boxes</span></h3>
+                    <p class="group">Додаток</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/inspiration-has-no-borders.jpg" 
+                        alt="Веб-сайт Inspiration has no Borders на екрані монітору">
+                    <h3 class="title" lang="en">Inspiration has no Borders</h3>
+                    <p class="group">Веб-сайт</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/limited-edition.jpg" 
+                        alt="Розгорнута книга на ілюстрації з написом: I'm Limited Edition">
+                    <h3 class="title">Видання <span lang="en">Limited Edition</span></h3>
+                    <p class="group">Дизайн</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/lab.jpg" 
+                        alt="Ярлик з написом LAB EL TAG">
+                    <h3 class="title">Проект <span lang="en">LAB</span></h3>
+                    <p class="group">Маркетинг</p>
+                </li>
+                <li>
+                    <img width="370" height="294" src="./images/portfolio/growing-business.jpg" 
+                        alt="Сайт Growing Business відображений екрані ноутбуку, на клавіатурі якого друкують чоловічі руки">
+                    <h3 class="title" lang="en">Growing Business</h3>
+                    <p class="group">Додаток</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <!-- Логотип. Посилання на головну сторінку -->
+        <a class="logo link" href="/index.html">Web<span class="logo-accent">Studio</span></a>
+
+        <!-- Дані, що є адресою-->
+        <address>
+            <ul class="collection">
+                <li>
+                    <a class="map link" target="_blank" rel="noopener noreferrer"
+                        href="https://maps.app.goo.gl/owwXhyqhxYpqnWEB8">
+                        м. Київ, пр-т Лесі Українки, 26
+                    </a>
+                </li>
+                <li>
+                    <a class="link additional" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                    <a class="link additional" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>
