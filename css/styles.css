@@ -26,8 +26,6 @@
 /* *Загальні стилі */
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -148,13 +146,13 @@ button {
 .page-footer {
   background-color: var(--color-background-dark);
 }
-.link.map {
-  color: var(--color-accent-white);
-}
-.additional {
+.address-contact {
   color: var(--color-additional);
 }
-
+.address-contact:focus,
+.address-contact:hover {
+  color: var(--color-accent-white);
+}
 /* **Сторінка Портфоліо */
 
 .radio-button {
