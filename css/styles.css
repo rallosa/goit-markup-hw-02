@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   color: var(--color-base);
 }
 .link {
@@ -50,6 +50,7 @@ address {
 }
 button {
   letter-spacing: inherit;
+  font-family: inherit;
 }
 /* *Логотип */
 .logo {
@@ -83,8 +84,8 @@ button {
   color: var(--color-base);
 } */
 
-.site-nav .link.current,
-.site-nav .link:hover,
+.site-nav .current,
+.site-nav .link:focus,
 .contacts .link:hover {
   color: var(--color-accent-main);
 }
@@ -129,7 +130,15 @@ button {
   text-transform: uppercase;
 }
 
+/* *Секція Процеси */
+.section-processes {
+  background-color: var(--color-background-light);
+}
+
 /* *Секція Наша Команда */
+.section-team {
+  background-color: var(--color-background-darkened);
+}
 .section-team .title {
   font-weight: 500;
   font-size: 16px;
