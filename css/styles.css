@@ -58,7 +58,7 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--color-accent-main);
 }
 .page-header .logo-accent {
   color: var(--color-title);
