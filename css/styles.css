@@ -59,6 +59,7 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--color-accent-main);
 }
 .page-header .logo-accent {
@@ -86,6 +87,8 @@ button {
 
 .site-nav .current,
 .site-nav .link:focus,
+.site-nav .link:hover,
+.contacts .link:focus,
 .contacts .link:hover {
   color: var(--color-accent-main);
 }
@@ -93,13 +96,13 @@ button {
 /* *Герой */
 .hero {
   background-color: var(--color-background-dark);
+  letter-spacing: 0.06em;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36; /* or 136% */
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-accent-white);
 }
@@ -108,12 +111,14 @@ button {
   font-size: 16px;
   line-height: 1.88;
   /* identical to box height, or 188% */
-  letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--color-accent-white);
   background: var(--color-accent-main);
 }
 
+main {
+  letter-spacing: 0.03em;
+}
 /* *Секції */
 .section-title {
   font-weight: 700;
@@ -171,7 +176,7 @@ button {
   color: var(--color-title);
   background-color: var(--color-background-darkened);
 }
-.radio-button.link.current {
+.radio-button.current {
   color: var(--color-accent-white);
   background-color: var(--color-accent-main);
 }
