@@ -8,6 +8,7 @@
   --color-title: #212121;
   /* Колір головного акценту */
   --color-accent-main: #2196f3;
+  --color-accent-hover: #188ce8;
   /* Колір акценту білий*/
   --color-accent-white: #ffffff;
   /* Колір додаткового акценту */
@@ -115,6 +116,10 @@ button {
   color: var(--color-accent-white);
   background: var(--color-accent-main);
 }
+.button:focus,
+.button:hover {
+  background-color: var(--color-accent-hover);
+}
 
 main {
   letter-spacing: 0.03em;
@@ -135,9 +140,9 @@ main {
   text-transform: uppercase;
 }
 
-/* *Секція Процеси */
+/* *Секція Процеси (Чим ми займаємось) */
 .section-processes {
-  background-color: var(--color-background-light);
+  /* background-color: var(--color-background-light); */
 }
 
 /* *Секція Наша Команда */
@@ -163,6 +168,7 @@ main {
 .address-contact {
   color: var(--color-additional);
 }
+.address-contact.map,
 .address-contact:focus,
 .address-contact:hover {
   color: var(--color-accent-white);
