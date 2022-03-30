@@ -1,0 +1,15 @@
+/** Для тестування 
+* @author Rallo Sergey
+* @DateСreate 2022.03.30
+* @DateLastEdit 2022.03.30
+*/
+
+div.first {
+  border: 1px solid red;
+  margin: 50px;
+}
+
+div.first div {
+  margin: inherit;
+  border: inherit;
+}

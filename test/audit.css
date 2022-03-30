@@ -1,0 +1,46 @@
+/* 2022.03.33  */
+
+/* Для перевірки специфічності селекторів */
+
+/* 0 1 1 */
+a[class] {
+}
+
+/* 0 0 3 */
+a::after::content {
+}
+
+/* 0 3 3 */
+a[class]:hover a:hover::after {
+}
+
+a.aa {
+}
+
+a.aa[alt] {
+}
+a.aa[alt='http'] {
+}
+a.aa[alt='https'] {
+}
+a.aa[alt^="http://"]
+{
+}
+
+a.aa:hover {
+}
+
+/* 0 3 1 */
+.aa[alt]:hover::after {
+}
+/* 0 2 1 */
+.aa:hover::after {
+}
+/* 0 2 1 */
+.aa[alt]::after {
+}
+.aa[alt]::content {
+}
+/* 0 3 0 */
+.aa[alt]:hover {
+}
