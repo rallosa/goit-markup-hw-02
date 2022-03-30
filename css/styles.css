@@ -186,6 +186,10 @@ main {
   background-color: var(--color-accent-main);
   cursor: pointer;
 }
+.card {
+  color: inherit;
+  text-decoration: inherit;
+}
 .section-portfolio .title {
   font-weight: 700;
   font-size: 18px;
