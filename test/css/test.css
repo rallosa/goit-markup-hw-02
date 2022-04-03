@@ -13,3 +13,17 @@ div.first div {
   margin: inherit;
   border: inherit;
 }
+
+div > ul > li {
+  border: 1px solid red;
+}
+
+.div {
+  border: 1px solid red;
+}
+.div-first {
+  margin-bottom: 5px;
+}
+.div-second {
+  margin: 15px;
+}
